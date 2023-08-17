@@ -14,7 +14,7 @@ interface aboutInterface {
     published: boolean
 };
 
-// testimonial schema
+// schema
 const aboutSchema = new Schema<aboutInterface>({
     description: {
         type: String,
