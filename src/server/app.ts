@@ -13,7 +13,7 @@ app.use("/api/v1/about/text", router);
 
 // db connection then server connection
 db.then(() => {
-    app.listen(8080, () => {
-        console.log("Server is running on port 8080");
+    app.listen(9090, () => {
+        console.log("Server is running on port 9090");
     })
 });
