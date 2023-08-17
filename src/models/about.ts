@@ -17,7 +17,8 @@ interface aboutInterface {
 // testimonial schema
 const aboutSchema = new Schema<aboutInterface>({
     description: {
-        type: String
+        type: String,
+        required: true
     },
     published: {
         type: Boolean,
@@ -27,4 +28,4 @@ const aboutSchema = new Schema<aboutInterface>({
 });
 
 // creating a model
-export const About = model<aboutInterface>("Product", aboutSchema);
+export const About = model<aboutInterface>("About", aboutSchema);
